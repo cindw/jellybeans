@@ -14,6 +14,7 @@ window.addEventListener('mousedown', function() {
     var test = document.createElement('img');
     var width = test.clientWidth;
     var height = test.clientHeight;
+    console.log(width);
     test.setAttribute('src', 'test.png');
     test.style.left = mouseX - width/2 + 'px';
     test.style.top = mouseY - height/2 + 'px'; 
