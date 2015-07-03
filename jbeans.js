@@ -14,10 +14,11 @@ window.addEventListener('mousedown', function() {
     var test = document.createElement('img');
     test.setAttribute('src', 'test.png');
     test.style.left = mouseX + 'px';
-    test.style.top = mouseY + 'px';    
+    test.style.top = mouseY + 'px'; 
+    test.style.position = 'absolute';
     console.log('good');
     document.getElementById('content').appendChild(test);
-    console.log(document.getElementById('content'));
+    console.log(test.style.left);
 });
 
 
