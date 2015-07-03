@@ -8,7 +8,6 @@ $(document).ready(function() {
 window.addEventListener('mousemove', function(e) {
     mouseX = e.pageX;
     mouseY = e.pageY;
-    console.log(mouseX + ", " +mouseY);
 });
 
 window.addEventListener('mousedown', function() { 
@@ -17,4 +16,5 @@ window.addEventListener('mousedown', function() {
     test.style.left = mouseX + 'px';
     test.style.top = mouseY + 'px';    
     console.log('good');
+    
 });
