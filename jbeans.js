@@ -16,8 +16,8 @@ window.addEventListener('mousedown', function() {
     test.style.left = mouseX + 'px';
     test.style.top = mouseY + 'px';    
     console.log('good');
-    document.getElementsByTagName('body')[0].appendChild(test);
-    console.log(document.getElementsByTagName('body')[0]);
+    document.getElementsByTagName('body').appendChild(test);
+    console.log(document.getElementsByTagName('body'));
 
 });
 
