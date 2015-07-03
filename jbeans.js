@@ -4,3 +4,4 @@ $(document).ready(function() {
     var mouseY = evnet.clientY;
     console.log(mouseX + ", " +mouseY);
 });
+
