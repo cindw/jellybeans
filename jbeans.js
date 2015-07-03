@@ -18,7 +18,6 @@ window.addEventListener('mousedown', function() {
     test.style.position = 'absolute';
     console.log('good');
     document.getElementById('content').appendChild(test);
-    console.log(test.style.left);
 });
 
 
