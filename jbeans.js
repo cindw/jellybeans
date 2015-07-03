@@ -19,10 +19,8 @@ window.addEventListener('mousedown', function() {
 	width = this.width;
 	height = this.height;
     }
-    console.log(width/2);
-    console.log(height/2);
-    test.style.left = mouseX - width/2 + 'px';
-    test.style.top = mouseY - height/2 + 'px'; 
+    test.style.left = mouseX - 150 + 'px';
+    test.style.top = mouseY - 150 + 'px'; 
     test.style.position = 'absolute';
     console.log('good');
     document.getElementById('body').appendChild(test);
