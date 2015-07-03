@@ -18,6 +18,7 @@ window.addEventListener('mousedown', function() {
     console.log('good');
     document.getElementsByTagName('body')[0].appendChild(test);
     console.log(document.getElementsByTagName('body')[0]);
+
 });
 
 
