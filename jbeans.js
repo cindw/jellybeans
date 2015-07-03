@@ -4,4 +4,3 @@ $(document).ready(function() {
     var mouseY = e.pageY;
     console.log(mouseX + ", " +mouseY);
 });
-
