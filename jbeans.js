@@ -6,4 +6,3 @@ $(document).ready(function() {
     console.log("ok");
     console.log(mouseX + ", " +mouseY);
 });
-
