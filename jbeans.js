@@ -12,9 +12,11 @@ window.addEventListener('mousemove', function(e) {
 
 window.addEventListener('mousedown', function() { 
     var test = document.createElement('img');
+    var width = test.clientWidth;
+    var height = test.clientHeight;
     test.setAttribute('src', 'test.png');
-    test.style.left = mouseX + 'px';
-    test.style.top = mouseY + 'px'; 
+    test.style.left = mouseX - width/2 + 'px';
+    test.style.top = mouseY - height/2 + 'px'; 
     test.style.position = 'absolute';
     console.log('good');
     document.getElementById('body').appendChild(test);
