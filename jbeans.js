@@ -21,7 +21,6 @@ window.addEventListener('mousedown', function() {
     }
     console.log(width/2);
     console.log(height/2);
-
     test.style.left = mouseX - width/2 + 'px';
     test.style.top = mouseY - height/2 + 'px'; 
     test.style.position = 'absolute';
