@@ -20,6 +20,7 @@ window.addEventListener('mousedown', function() {
 	height = this.height;
 	console.log(width);
 	console.log(height);
+
     }
     test.style.left = mouseX - width/2 + 'px';
     test.style.top = mouseY - height/2 + 'px'; 
