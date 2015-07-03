@@ -16,5 +16,4 @@ window.addEventListener('mousedown', function() {
     test.style.left = mouseX + 'px';
     test.style.top = mouseY + 'px';    
     console.log('good');
-    
 });
