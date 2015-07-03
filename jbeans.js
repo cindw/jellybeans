@@ -18,10 +18,10 @@ window.addEventListener('mousedown', function() {
     test.onload = function() {
 	width = this.width;
 	height = this.height;
-	console.log(width);
-	console.log(height);
-
     }
+    console.log(width/2);
+    console.log(height/2);
+
     test.style.left = mouseX - width/2 + 'px';
     test.style.top = mouseY - height/2 + 'px'; 
     test.style.position = 'absolute';
