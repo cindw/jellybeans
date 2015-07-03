@@ -17,8 +17,9 @@ window.addEventListener('mousedown', function() {
     test.style.top = mouseY + 'px'; 
     test.style.position = 'absolute';
     console.log('good');
-    document.getElementById('content').appendChild(test);
+    document.getElementById('body').appendChild(test);
 });
+
 
 
 
