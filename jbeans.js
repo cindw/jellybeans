@@ -18,7 +18,6 @@ window.addEventListener('mousedown', function() {
     console.log('good');
     document.getElementById('content').appendChild(test);
     console.log(document.getElementById('content'));
-
 });
 
 
