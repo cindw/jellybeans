@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    var mouseX;
-    var mouseY;
+    var mouseX = 0;
+    var mouseY = 0;
     console.log("ok");
 
 });
@@ -11,3 +11,7 @@ window.addEventListener('mousemove', function(e) {
     console.log(mouseX + ", " +mouseY);
 });
 
+window.addEventListener('mousedown', function() { 
+    var test = document.createElement('img');
+    test.setAttribute('src', 'test.png');
+});
