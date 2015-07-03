@@ -14,4 +14,6 @@ window.addEventListener('mousemove', function(e) {
 window.addEventListener('mousedown', function() { 
     var test = document.createElement('img');
     test.setAttribute('src', 'test.png');
+    test.style.left = mouseX + 'px';
+    test.style.top = mouseY + 'px';    
 });
