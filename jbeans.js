@@ -26,7 +26,8 @@ window.addEventListener('click', function() {
     document.getElementById('body').appendChild(test); 
     var audio = document.getElementById("testaudio");
     audio.play();
+    images = document.getElementsByTagName('img');
+    console.log(images);
+    
 });
-
-
 
