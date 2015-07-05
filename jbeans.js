@@ -26,6 +26,7 @@ window.addEventListener('click', function() {
     var audio = document.getElementById("testaudio");
     audio.play();
     images = document.getElementsByTagName('img');
+    console.log(images);
 });
 
 var gravity = function() {
@@ -36,5 +37,5 @@ var gravity = function() {
     }
 };
 
-event = setInterval(gravity,1000);
+//event = setInterval(gravity,1000);
 
