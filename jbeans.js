@@ -22,7 +22,6 @@ window.addEventListener('mousedown', function() {
     test.style.left = mouseX - 150 + 'px';
     test.style.top = mouseY - 150 + 'px'; 
     test.style.position = 'absolute';
-    console.log('good');
     document.getElementById('body').appendChild(test); 
     var audio = document.getElementById("testaudio");
     audio.play();
