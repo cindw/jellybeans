@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
     var mouseX = 0;
     var mouseY = 0;
@@ -23,6 +24,10 @@ window.addEventListener('mousedown', function() {
     test.style.top = mouseY - 150 + 'px'; 
     test.style.position = 'absolute';
     console.log('good');
-    document.getElementById('body').appendChild(test);
+    document.getElementById('body').appendChild(test); 
+    var audio = document.getElementById("testaudio");
+    console.log(audio);
+    audio.play();
+    
 });
 
