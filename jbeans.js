@@ -29,8 +29,8 @@ window.addEventListener('click', function() {
 });
 
 var gravity = function() {
+    console.log(images);
     for ( i in images ) {
-	console.log(i);
 //	i.style.top = i.style.top + 10 + 'px';
     }
 };
