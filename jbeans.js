@@ -30,9 +30,10 @@ window.addEventListener('click', function() {
 
 var gravity = function() {
 //    console.log(images);
-    console.log(images.length);
     for ( var i = 0; i < images.length; i++ ) {
+	console.log(parseInt(parseInt(images[i].style.top - "px"));
 	images[i].style.top = parseInt(images[i].style.top - "px") + parseInt(10) + "px";
+	console.log(images[i].style.top);
     }
 };
 
