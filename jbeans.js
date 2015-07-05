@@ -8,6 +8,8 @@ window.addEventListener('mousemove', function(e) {
     mouseY = e.pageY;
 });
 console.log('update');
+console.log('update');
+console.log('update');
 document.getElementById('content').addEventListener('click', function() { 
     var test = document.createElement('img');
     test.setAttribute('src', 'test.png')
