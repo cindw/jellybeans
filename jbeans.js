@@ -25,7 +25,10 @@ window.addEventListener('mousedown', function() {
     console.log('good');
     document.getElementById('body').appendChild(test); 
     var audio = document.getElementById("testaudio");
-    audio.pause();
     audio.play();
 });
 
+window.addEventListener('mouseup', function() { 
+    var audio = document.getElementById("testaudio");
+    audio.pause();
+});
