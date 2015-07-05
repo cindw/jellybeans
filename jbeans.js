@@ -2,7 +2,6 @@
 $(document).ready(function() {
     var mouseX = 0;
     var mouseY = 0;
-    var audio = document.getElementById("testaudio");
 });
 
 window.addEventListener('mousemove', function(e) {
@@ -25,7 +24,8 @@ window.addEventListener('mousedown', function() {
     test.style.position = 'absolute';
     console.log('good');
     document.getElementById('body').appendChild(test); 
-    console.log(audio);
+    var audio = document.getElementById("testaudio");
+    audio.pause();
     audio.play();
     
 });
