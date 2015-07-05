@@ -7,7 +7,7 @@ window.addEventListener('mousemove', function(e) {
     mouseX = e.pageX;
     mouseY = e.pageY;
 });
-console.log('udpdate')
+console.log('udpdate');
 document.getElementById('content').addEventListener('click', function() { 
     var test = document.createElement('img');
     test.setAttribute('src', 'test.png')
