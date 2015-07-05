@@ -1,15 +1,16 @@
 $(document).ready(function() {
     var mouseX = 0;
     var mouseY = 0;
+
+    images = document.getElementsByTag('img');
+    console.log(images);
 });
 
 window.addEventListener('mousemove', function(e) {
     mouseX = e.pageX;
     mouseY = e.pageY;
 });
-console.log('update');
-console.log('update');
-console.log('update');
+
 window.addEventListener('click', function() { 
     var test = document.createElement('img');
     test.setAttribute('src', 'test.png')
@@ -26,5 +27,6 @@ window.addEventListener('click', function() {
     var audio = document.getElementById("testaudio");
     audio.play();
 });
+
 
 
