@@ -32,7 +32,7 @@ var gravity = function() {
 //    console.log(images);
     for ( var i = 0; i < images.length; i++ ) {
 	var pix = images[i].style.top;
-	var pixInt = parseInt( pix.substring(0, pix.length-2)) );
+	var pixInt = parseInt( pix.substring(0, pix.length-2) );
 	images[i].style.top = pixInt + parseInt(10) + "px";
     }
 };
