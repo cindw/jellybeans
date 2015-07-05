@@ -37,5 +37,5 @@ var gravity = function() {
     }
 };
 
-event = setInterval(gravity,1000);
+event = setInterval(gravity,100);
 
