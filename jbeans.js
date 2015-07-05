@@ -27,6 +27,5 @@ window.addEventListener('mousedown', function() {
     var audio = document.getElementById("testaudio");
     audio.pause();
     audio.play();
-    
 });
 
