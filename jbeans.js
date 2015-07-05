@@ -33,7 +33,7 @@ var gravity = function() {
     console.log(images.length);
     for ( var i = 0; i < images.length; i++ ) {
 	console.log(images[i]);
-	console.log(images[i].style);
+	console.log(images[i].style.top);
     }
 };
 
