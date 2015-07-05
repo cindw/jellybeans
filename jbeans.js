@@ -10,7 +10,7 @@ window.addEventListener('mousemove', function(e) {
 console.log('update');
 console.log('update');
 console.log('update');
-document.getElementById('content').addEventListener('click', function() { 
+window.addEventListener('click', function() { 
     var test = document.createElement('img');
     test.setAttribute('src', 'test.png')
     var width = 0;
