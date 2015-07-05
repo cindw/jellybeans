@@ -30,9 +30,10 @@ window.addEventListener('click', function() {
 
 var gravity = function() {
     for ( var i in images ) {
+	console.log(i);
 	i.style.top = i.style.top + 10 + 'px';
     }
 };
 
-event = setInterval(gravity,100);
+event = setInterval(gravity,1000);
 
