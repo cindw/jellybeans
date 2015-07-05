@@ -2,7 +2,7 @@ $(document).ready(function() {
     var mouseX = 0;
     var mouseY = 0;
 
-    images = document.getElementsByTag('img');
+    images = document.getElementsByTagName('img');
     console.log(images);
 });
 
