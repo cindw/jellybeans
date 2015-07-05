@@ -10,7 +10,6 @@ window.addEventListener('mousemove', function(e) {
 });
 
 console.log("#content");
-
 document.getElementById("content").addEventListener('click', function() { 
     var test = document.createElement('img');
     test.setAttribute('src', 'test.png')
