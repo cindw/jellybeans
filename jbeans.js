@@ -9,7 +9,7 @@ window.addEventListener('mousemove', function(e) {
     mouseY = e.pageY;
 });
 
-document.getElementById("content").addEventListener('click', function() { 
+document.getElementById('content').addEventListener('click', function() { 
     var test = document.createElement('img');
     test.setAttribute('src', 'test.png')
     var width = 0;
