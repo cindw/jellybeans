@@ -10,7 +10,7 @@ window.addEventListener('mousemove', function(e) {
 });
 
 
-window.addEventListener('mousedown', function() { 
+$("#content").addEventListener('mousedown', function() { 
     var test = document.createElement('img');
     test.setAttribute('src', 'test.png')
     var width = 0;
