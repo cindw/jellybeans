@@ -1,9 +1,6 @@
 $(document).ready(function() {
     var mouseX = 0;
     var mouseY = 0;
-
-    images = document.getElementsByTagName('img');
-    console.log(images);
 });
 
 window.addEventListener('mousemove', function(e) {
@@ -26,8 +23,14 @@ window.addEventListener('click', function() {
     document.getElementById('body').appendChild(test); 
     var audio = document.getElementById("testaudio");
     audio.play();
-    images = document.getElementsByTagName('img');
-    console.log(images);
-    
 });
 
+images = document.getElementsByTagName('img');
+
+var gravity = function() {
+    for i in images {
+	i.style.top = i.style.top + 10 + 'px';
+    }
+};
+
+event = setInterval(gravity,100);
