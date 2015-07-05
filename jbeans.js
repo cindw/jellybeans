@@ -26,11 +26,11 @@ window.addEventListener('click', function() {
     var audio = document.getElementById("testaudio");
     audio.play();
     images = document.getElementsByTagName('img');
-    console.log(images);
 });
 
 var gravity = function() {
 //    console.log(images);
+    console.log(images.length);
     for ( var i = 0; i < images.length-2; i++ ) {
 	console.log(images[i]);
 //	i.style.top = i.style.top + 10 + 'px';
