@@ -28,7 +28,7 @@ window.addEventListener('click', function() {
 images = document.getElementsByTagName('img');
 
 var gravity = function() {
-    for i in images {
+    for ( var i in images ) {
 	i.style.top = i.style.top + 10 + 'px';
     }
 };
