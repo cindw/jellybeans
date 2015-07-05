@@ -3,6 +3,8 @@ $(document).ready(function() {
     var mouseY = 0;
 });
 
+var images = [];
+
 window.addEventListener('mousemove', function(e) {
     mouseX = e.pageX;
     mouseY = e.pageY;
@@ -23,9 +25,8 @@ window.addEventListener('click', function() {
     document.getElementById('body').appendChild(test); 
     var audio = document.getElementById("testaudio");
     audio.play();
+    images = document.getElementsByTagName('img');
 });
-
-images = document.getElementsByTagName('img');
 
 var gravity = function() {
     for ( var i in images ) {
