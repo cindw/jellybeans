@@ -29,7 +29,7 @@ window.addEventListener('click', function() {
 });
 
 var gravity = function() {
-    console.log(images);
+//    console.log(images);
     for ( i in images ) {
 	console.log(images[i]);
 //	i.style.top = i.style.top + 10 + 'px';
