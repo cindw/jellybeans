@@ -24,3 +24,5 @@ $(document).ready(function() {
 	audio.play();
     });
 });
+
+console.log('bitch');
