@@ -9,8 +9,8 @@ window.addEventListener('mousemove', function(e) {
     mouseY = e.pageY;
 });
 
-
-$("#content").addEventListener('mousedown', function() { 
+console.log("#content");
+$("#content").addEventListener('click', function() { 
     var test = document.createElement('img');
     test.setAttribute('src', 'test.png')
     var width = 0;
