@@ -3,11 +3,11 @@ $(document).ready(function() {
     var mouseX = 0;
     var mouseY = 0;
 
-    $('#content').addEventListener('mousemove', function(e) {
+    $('#content').bind('mousemove', function(e) {
 	mouseX = e.pageX;
 	mouseY = e.pageY;
     });
-    $('#content').addEventListener('click', function(e) {
+    $('#content').bind('click', function(e) {
 	var test = document.createElement('img');
 	test.setAttribute('src', 'test.png')
 	var width = 0;
