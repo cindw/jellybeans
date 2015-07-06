@@ -9,7 +9,7 @@ $(document).ready(function() {
     });
 
     $('#content').bind('click', function(e) {
-	if ( mouseY < 200 ) {
+	if ( mouseY > 350 ) {
 	    var test = document.createElement('img');
 	    test.setAttribute('src', 'test.png')
 	    var width = 0;
@@ -34,7 +34,7 @@ var images = [];
 var gravity = function() {
 
     var wwidth = $(body).width();
-    var wheight = $(title).height() + $(content).height() + 50;
+    var wheight = 650;
     for ( var i = 0; i < images.length; i++ ) {
 	var pix = images[i].style.top;
 	var pixInt = parseInt( pix.substring(0, pix.length-2) );
