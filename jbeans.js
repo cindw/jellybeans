@@ -6,7 +6,7 @@ $(document).ready(function() {
     var mouseY = 0;
 
 });
-
+console.log($('#content'));
 $('#content').bind('mousemove', function(e) {
     mouseX = e.pageX;
     mouseY = e.pageY;
