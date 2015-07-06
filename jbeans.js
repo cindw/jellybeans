@@ -1,12 +1,13 @@
 var images = [];
+$('#content').bind('mousemove', function(e) {
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+});
+
 $(document).ready(function() {
     var mouseX = 0;
     var mouseY = 0;
 
-    $('#content').bind('mousemove', function(e) {
-	mouseX = e.pageX;
-	mouseY = e.pageY;
-    });
     $('#content').bind('click', function(e) {
 	var test = document.createElement('img');
 	test.setAttribute('src', 'test.png')
