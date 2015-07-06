@@ -11,8 +11,6 @@ $('#content').bind('mousemove', function(e) {
     mouseY = e.pageY;
     console.log(mouseX);
 });
-console.log($('#content'));
-console.log($('#content'));
 $('#content').bind('click', function(e) {
     var test = document.createElement('img');
     test.setAttribute('src', 'test.png')
@@ -31,6 +29,7 @@ $('#content').bind('click', function(e) {
     images = document.getElementsByTagName('img');
 });
 
+console.log($('#content'));
 
 var gravity = function() {
 
