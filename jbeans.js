@@ -1,17 +1,13 @@
 $(document).ready(function() {
     var mouseX = 0;
     var mouseY = 0;
-});
-
-var images = [];
-
-
 $('#content').bind('mousemove', function(e) {
     mouseX = e.pageX;
     mouseY = e.pageY;
     console.log(mouseX);
 });
-$('#content').bind('onclick', function(e) {
+
+$('#content').bind('click', function(e) {
     var test = document.createElement('img');
     test.setAttribute('src', 'test.png')
     var width = 0;
@@ -28,8 +24,10 @@ $('#content').bind('onclick', function(e) {
     audio.play();
     images = document.getElementsByTagName('img');
 });
+});
 
-console.log($('#content'));
+var images = [];
+
 
 var gravity = function() {
 
