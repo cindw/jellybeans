@@ -10,7 +10,7 @@ window.addEventListener('mousemove', function(e) {
     });
 
 window.addEventListener('click', function(e) {
-    if ( mouseX > 100 ) {
+    if ( mouseY > 100 ) {
 	var test = document.createElement('img');
 	test.setAttribute('src', 'test.png')
 	var width = 0;
