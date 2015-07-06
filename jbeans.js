@@ -36,7 +36,7 @@ var gravity = function() {
 	var pix = images[i].style.top;
 	var pixInt = parseInt( pix.substring(0, pix.length-2) );
 	console.log(pixInt);
-	if ( pixInt + 300 < wheight ) {
+	if ( pixInt + 150 < wheight ) {
 	    images[i].style.top = pixInt + parseInt(10) + "px";
 	}
     }
