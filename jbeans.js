@@ -5,13 +5,14 @@ $(document).ready(function() {
 
 var images = [];
 
-console.log($('#content'));
+
 $('#content').bind('mousemove', function(e) {
     mouseX = e.pageX;
     mouseY = e.pageY;
     console.log(mouseX);
 });
-
+console.log($('#content'));
+console.log($('#content'));
 $('#content').bind('click', function(e) {
     var test = document.createElement('img');
     test.setAttribute('src', 'test.png')
