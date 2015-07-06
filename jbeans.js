@@ -31,7 +31,7 @@ var images = [];
 var gravity = function() {
 
     var wwidth = $(body).width();
-    var wheight = $(title).height() + $(content).height() + 30;
+    var wheight = $(title).height() + $(content).height() + 50;
     for ( var i = 0; i < images.length; i++ ) {
 	var pix = images[i].style.top;
 	var pixInt = parseInt( pix.substring(0, pix.length-2) );
