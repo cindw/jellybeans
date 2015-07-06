@@ -33,7 +33,7 @@ window.addEventListener('click', function() {
 var gravity = function() {
 
     var wwidth = $(body).width();
-    var wheight = $(title).height() + $(content).height() + $(footer.height) + 30;
+    var wheight = $(title).height() + $(content).height() + $(footer).height() + 30;
     console.log(wheight);
     for ( var i = 0; i < images.length; i++ ) {
 	var pix = images[i].style.top;
