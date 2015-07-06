@@ -20,9 +20,9 @@ body {
     background: #000000;
     padding: 1px 0px 1px 16px;
     margin: -8px 0px 10px -8px;
-    width: 100px;
+    width: 100% ;
     top: 0px;
-    height: 10%;
+    height: 100px
     postion: relative;
 }
 
