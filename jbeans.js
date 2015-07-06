@@ -33,12 +33,11 @@ window.addEventListener('click', function() {
 var gravity = function() {
 
     var wwidth = $(body).width();
-    var wheight = 600;
+    var wheight = $(title).height() + $(content).height() + $(footer.height) + 30;
     console.log(wheight);
     for ( var i = 0; i < images.length; i++ ) {
 	var pix = images[i].style.top;
 	var pixInt = parseInt( pix.substring(0, pix.length-2) );
-	console.log(pixInt);
 	if ( pixInt + 300 < wheight ) {
 	    images[i].style.top = pixInt + parseInt(10) + "px";
 	}
