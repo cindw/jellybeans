@@ -5,7 +5,6 @@ $(document).ready(function() {
     $('#content').bind('mousemove', function(e) {
 	mouseX = e.pageX;
 	mouseY = e.pageY;
-	console.log(mouseX);
     });
 
     $('#content').bind('click', function(e) {
