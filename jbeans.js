@@ -29,10 +29,12 @@ window.addEventListener('click', function() {
     images = document.getElementsByTagName('img');
 });
 
-var wwidth = window.innerWidth;
-var wheight = window.innerHeight;
 
 var gravity = function() {
+
+    var wwidth = $(body).width();
+    var wheight = $(body).height();
+
     for ( var i = 0; i < images.length; i++ ) {
 	var pix = images[i].style.top;
 	var pixInt = parseInt( pix.substring(0, pix.length-2) );
