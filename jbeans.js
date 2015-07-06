@@ -31,11 +31,11 @@ var images = [];
 var gravity = function() {
 
     var wwidth = $(body).width();
-    var wheight = $(title).height() + $(content).height() + 15;
+    var wheight = $(title).height() + $(content).height() + 30;
     for ( var i = 0; i < images.length; i++ ) {
 	var pix = images[i].style.top;
 	var pixInt = parseInt( pix.substring(0, pix.length-2) );
-	if ( pixInt + 150 < wheight ) {
+	if ( pixInt + 300 < wheight ) {
 	    images[i].style.top = pixInt + parseInt(10) + "px";
 	}
     }
