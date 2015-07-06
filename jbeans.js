@@ -4,13 +4,12 @@ $(document).ready(function() {
 
     
 });
-
-$('#content').bind('mousemove', function(e) {
+window.addEventListener('mousemove', function(e) {
 	mouseX = e.pageX;
 	mouseY = e.pageY;
     });
 
-$('#content').bind('click', function(e) {
+window.addEventListener('click', function(e) {
 
     var test = document.createElement('img');
     test.setAttribute('src', 'test.png')
