@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
     var mouseX = 0;
     var mouseY = 0;
@@ -28,11 +29,16 @@ window.addEventListener('click', function() {
     images = document.getElementsByTagName('img');
 });
 
+var wwidth = window.innerWidth;
+var wheight = window.innerHeight;
+
 var gravity = function() {
     for ( var i = 0; i < images.length; i++ ) {
 	var pix = images[i].style.top;
 	var pixInt = parseInt( pix.substring(0, pix.length-2) );
-	images[i].style.top = pixInt + parseInt(10) + "px";
+	if ( pixInt + 300 < height ) {
+	    images[i].style.top = pixInt + parseInt(10) + "px";
+	}
     }
 };
 
