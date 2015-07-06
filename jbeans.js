@@ -11,7 +11,7 @@ $('#content').bind('mousemove', function(e) {
     mouseY = e.pageY;
     console.log(mouseX);
 });
-$('#content').bind('click', function(e) {
+$('#content').bind('onclick', function(e) {
     var test = document.createElement('img');
     test.setAttribute('src', 'test.png')
     var width = 0;
