@@ -1,18 +1,16 @@
-var images = [];
-
-
 $(document).ready(function() {
     var mouseX = 0;
     var mouseY = 0;
-
 });
+
+var images = [];
+
 console.log($('#content'));
 $('#content').bind('mousemove', function(e) {
     mouseX = e.pageX;
     mouseY = e.pageY;
     console.log(mouseX);
 });
-
 
 $('#content').bind('click', function(e) {
     var test = document.createElement('img');
@@ -37,7 +35,6 @@ var gravity = function() {
 
     var wwidth = $(body).width();
     var wheight = $(title).height() + $(content).height() + $(footer).height() + 30;
-    console.log(wheight);
     for ( var i = 0; i < images.length; i++ ) {
 	var pix = images[i].style.top;
 	var pixInt = parseInt( pix.substring(0, pix.length-2) );
