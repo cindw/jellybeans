@@ -29,7 +29,7 @@ $(document).ready(function() {
 var images = [];
 
 var gravity = function() {
-
+    console.log($(title).height());
     var wwidth = $(body).width();
     var wheight = $(title).height() + $(content).height() + 15;
     for ( var i = 0; i < images.length; i++ ) {
