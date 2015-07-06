@@ -1,3 +1,7 @@
+html {
+    height: 100vh;
+}
+
 body {
     background: #660000;
     background-image: url("../images/bg.jpg");
@@ -5,7 +9,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     color: white;
-    height: 100vh;
+    height: 100%;
     min-width: 450px;
 }
 
