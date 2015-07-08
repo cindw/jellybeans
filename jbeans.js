@@ -15,7 +15,7 @@ window.addEventListener('click', function(e) {
 	var imageObj = new Image();
 
 	imageObj.onload = function() {
-            context.drawImage(imageObj, mouseX, mouseY);
+            context.drawImage(imageObj, 0, 0);
 	};
 	imageObj.src = 'test.png';
 
