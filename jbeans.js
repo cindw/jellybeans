@@ -12,7 +12,7 @@ $(document).ready(function() {
 
     $("#screen").bind('click', function(e) {
 	if ( mouseY > 100 ) {
-
+	    console.log("click");
 	    var canvas = document.getElementById('screen');
 	    var mouse = mousePos(canvas, e);
 
