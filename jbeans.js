@@ -3,6 +3,8 @@ $(document).ready(function() {
     var mouseY = 0;
 });
 
+console.log($('#screen'));
+
 $('#screen').bind('mousemove', function(e) {
 	mouseX = e.pageX;
 	mouseY = e.pageY;
