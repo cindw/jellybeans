@@ -2,20 +2,27 @@ $(document).ready(function() {
     var mouseX = 0;
     var mouseY = 0;
 
-    $("#screen").bind('mousemove', function(e) {
-	mouseX = e.pageX;
-	mouseY = e.pageY;
-    });
+    function mousePos(canvas, evt) {
+        var rect = canvas.getBoundingClientRect();
+        return {
+            x: evt.clientX - rect.left,
+            y: evt.clientY - rect.top
+        };
+    }
 
     $("#screen").bind('click', function(e) {
 	if ( mouseY > 100 ) {
+
 	    var canvas = document.getElementById('screen');
+	    var mouse = mousePos(canvas, e);
+
 	    var context = canvas.getContext('2d');
 	    var imageObj = new Image();
-	    console.log(mouseX);
-	    console.log(mouseY);
+
+	    console.log(mouse.x);
+	    console.log(mouse.y);
 	    imageObj.onload = function() {
-		context.drawImage(imageObj, mouseX-474, mouseY-143, 100, 50);
+		context.drawImage(imageObj, mouse.x, mouse.y, 100, 50);
 	    };
 	    imageObj.src = 'test.png';
 
