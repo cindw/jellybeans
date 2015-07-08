@@ -17,7 +17,7 @@ window.addEventListener('click', function(e) {
 	imageObj.onload = function() {
             context.drawImage(imageObj, mouseX, mouseY);
 	};
-	imageObj.src = 'bean.png';
+	imageObj.src = 'test.png';
 
 	var audio = document.getElementById("testaudio");
 	audio.play();
