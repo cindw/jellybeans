@@ -3,14 +3,12 @@ $(document).ready(function() {
     var mouseY = 0;
 });
 
-console.log($('#screen'));
-
-document.getElementById("screen").addEventListener('mousemove', function(e) {
+window.addEventListener('mousemove', function(e) {
 	mouseX = e.pageX;
 	mouseY = e.pageY;
     });
 
-document.getElementById("screen").addEventListener('click', function(e) {
+window.addEventListener('click', function(e) {
     if ( mouseY > 100 ) {
 	var test = document.createElement('img');
 	test.setAttribute('src', 'test.png')
