@@ -10,7 +10,15 @@ window.addEventListener('mousemove', function(e) {
 
 window.addEventListener('click', function(e) {
     if ( mouseY > 100 ) {
-	$('#screen').append('<img id="bean" src="test.png" />');
+	var canvas = document.getElementById('screen');
+	var context = canvas.getContext('2d');
+	var imageObj = new Image();
+
+	imageObj.onload = function() {
+            context.drawImage(imageObj, mouseX, mouseY);
+	};
+	imageObj.src = 'bean.png';
+
 	var audio = document.getElementById("testaudio");
 	audio.play();
 	images = document.getElementsByTagName('img');
