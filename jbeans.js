@@ -12,10 +12,10 @@ $(document).ready(function() {
 	    var canvas = document.getElementById('screen');
 	    var context = canvas.getContext('2d');
 	    var imageObj = new Image();
-	    console.log(mouseX-600);
-	    console.log(mouseY-300);
+	    console.log(mouseX);
+	    console.log(mouseY);
 	    imageObj.onload = function() {
-		context.drawImage(imageObj, mouseX-600, mouseY-300, 100, 50);
+		context.drawImage(imageObj, mouseX, mouseY, 100, 50);
 	    };
 	    imageObj.src = 'test.png';
 
