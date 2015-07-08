@@ -29,7 +29,7 @@ body {
     postion: relative;
 }
 
-#screen {
+#content {
     padding: 25px;
     padding-top: 10px;
     height: 500px;

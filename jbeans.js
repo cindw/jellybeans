@@ -10,17 +10,7 @@ window.addEventListener('mousemove', function(e) {
 
 window.addEventListener('click', function(e) {
     if ( mouseY > 100 ) {
-	var test = document.createElement('img');
-	test.setAttribute('src', 'test.png')
-	var width = 0;
-	var height = 0;
-	test.onload = function() {
-	    width = this.width;
-	    height = this.height;
-	}
-	test.style.left = mouseX - 150 + 'px';
-	test.style.top = mouseY - 150 + 'px'; 
-	test.style.position = 'absolute';
+	$('#screen').append('<img id="bean" src="test.png" style="left:'+mouseX - 150+'px;top:'+mouseY - 150+'px;position='absolute'" />')
 	document.getElementById('body').appendChild(test); 
 	var audio = document.getElementById("testaudio");
 	audio.play();
