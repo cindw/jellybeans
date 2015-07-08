@@ -5,12 +5,12 @@ $(document).ready(function() {
 
 console.log($('#screen'));
 
-$('#screen').bind('mousemove', function(e) {
+document.getElementById("screen").addEventListener('mousemove', function(e) {
 	mouseX = e.pageX;
 	mouseY = e.pageY;
     });
 
-$('#screen').bind('click', function(e) {
+document.getElementById("screen").addEventListener('click', function(e) {
     if ( mouseY > 100 ) {
 	var test = document.createElement('img');
 	test.setAttribute('src', 'test.png')
