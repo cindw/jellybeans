@@ -10,7 +10,7 @@ window.addEventListener('mousemove', function(e) {
 
 window.addEventListener('click', function(e) {
     if ( mouseY > 100 ) {
-	$('#screen').append('<img id="bean" src="test.png" style="left:'+mouseX - 150+'px;top:'+mouseY - 150+'px;position=absolute" />');
+	$('#screen').append('<img id="bean" src="test.png" />');
 	var audio = document.getElementById("testaudio");
 	audio.play();
 	images = document.getElementsByTagName('img');
