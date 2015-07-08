@@ -20,7 +20,7 @@ window.addEventListener('click', function(e) {
 	}
 	test.style.left = mouseX - 150 + 'px';
 	test.style.top = mouseY - 150 + 'px'; 
-	test.style.position = 'relative';
+	test.style.position = 'static';
 	document.getElementById('body').appendChild(test); 
 	var audio = document.getElementById("testaudio");
 	audio.play();
