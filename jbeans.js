@@ -15,7 +15,7 @@ $(document).ready(function() {
 	    console.log(mouseX);
 	    console.log(mouseY);
 	    imageObj.onload = function() {
-		context.drawImage(imageObj, mouseX, mouseY, 100, 50);
+		context.drawImage(imageObj, 0, 0, 100, 50);
 	    };
 	    imageObj.src = 'test.png';
 
