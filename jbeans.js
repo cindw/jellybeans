@@ -13,8 +13,8 @@ window.addEventListener('click', function(e) {
 	var canvas = document.getElementById('screen');
 	var context = canvas.getContext('2d');
 	var imageObj = new Image();
-	console.log(mouseX);
-	console.log(mouseY);
+	console.log(mouseX-300);
+	console.log(mouseY-300);
 	imageObj.onload = function() {
             context.drawImage(imageObj, mouseX-300, mouseY-300, 300, 150);
 	};
