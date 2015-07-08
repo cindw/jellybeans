@@ -18,9 +18,9 @@ window.addEventListener('click', function(e) {
 	    width = this.width;
 	    height = this.height;
 	}
-	test.style.left = mouseX - 150 + 'px';
-	test.style.top = mouseY - 150 + 'px'; 
-	test.style.position = 'static';
+//	test.style.left = mouseX - 150 + 'px';
+//	test.style.top = mouseY - 150 + 'px'; 
+	test.style.position = 'relative';
 	document.getElementById('body').appendChild(test); 
 	var audio = document.getElementById("testaudio");
 	audio.play();
